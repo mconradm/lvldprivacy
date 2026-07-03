@@ -52,20 +52,21 @@
   <ul>
     <li>Information you choose to enter, such as expenses, income, budgets, categories, notes, and savings goals.</li>
     <li>Transaction details you manually add, including amounts, dates, merchants, descriptions, and categories.</li>
-    <li>This information is saved so you can view your history, track progress, and manage your budget over time.</li>
+    <li>This information is stored on your device so you can view your history, track progress, and manage your budget over time.</li>
+    <li>Your budgets and transactions are not uploaded to LVLD servers.</li>
   </ul>
 
-  <h3>iCloud Sync</h3>
+  <h3>Storage and Backup</h3>
   <ul>
-    <li>LVLD uses Apple iCloud to store and sync your app data where iCloud is enabled on your device.</li>
-    <li>This allows your budgets, expenses, categories, notes, and settings to remain available across your Apple devices.</li>
-    <li>iCloud is provided by Apple and is connected to your Apple ID. Apple handles iCloud data in accordance with its own privacy and security practices.</li>
-    <li>LVLD does not sell or share your iCloud data with advertisers.</li>
+    <li>Your budgets, transactions, and settings are stored on your device.</li>
+    <li>They are not uploaded to our servers.</li>
+    <li>If you back up your iPhone using iCloud or a computer backup, your LVLD data may be included in that backup.</li>
+    <li>iPhone backups are controlled by Apple’s backup settings.</li>
   </ul>
 
   <h3>App Identifiers</h3>
   <ul>
-    <li>The app may use basic identifiers needed to support app functionality, syncing, subscriptions, and restoring access.</li>
+    <li>The app may use basic identifiers needed to support app functionality, subscriptions, and restoring access.</li>
     <li>We do not use these identifiers to track you across other apps or websites.</li>
   </ul>
 
@@ -73,13 +74,16 @@
   <ul>
     <li>If LVLD offers paid features or subscriptions, payments are handled by Apple through the App Store.</li>
     <li>We do not receive or store your full payment card details.</li>
-    <li>We may receive basic subscription status information from Apple so we can unlock paid features.</li>
+    <li>We may receive basic subscription status and purchase information from Apple through RevenueCat so we can unlock paid features and restore purchases.</li>
   </ul>
 
   <h3>Usage and Diagnostics Data</h3>
   <ul>
-    <li>LVLD may collect basic usage information, such as feature interactions, to improve app performance and usability.</li>
-    <li>LVLD may collect crash reports and performance diagnostics through Apple’s built-in tools.</li>
+    <li>LVLD may collect limited technical diagnostics to improve app stability and performance.</li>
+    <li>Crash reports may be processed through Sentry.</li>
+    <li>These crash reports are technical diagnostics and are not linked to your identity.</li>
+    <li>LVLD may record anonymous app-setup progress in our own Supabase database, such as which onboarding step was reached.</li>
+    <li>This anonymous app-setup progress does not include your answers, amounts, budgets, transactions, or identity.</li>
     <li>We do not use this information to build an advertising profile of you.</li>
   </ul>
 
@@ -101,45 +105,79 @@
   <p>Information handled by LVLD is used only to:</p>
   <ul>
     <li>Provide budgeting, expense tracking, savings, and finance organisation features</li>
-    <li>Save your budgets, transactions, categories, notes, and settings</li>
+    <li>Save your budgets, transactions, categories, notes, and settings on your device</li>
     <li>Show charts, summaries, trends, and spending insights</li>
-    <li>Sync your data using iCloud where enabled</li>
     <li>Manage your subscription access</li>
+    <li>Restore purchases</li>
     <li>Improve app stability, performance, and usability</li>
     <li>Respond to support requests</li>
   </ul>
 
   <p>
-    <strong>We do not sell your personal information to advertisers or third parties.</strong>
-    We do not share your personal information with advertisers, and we do not use your data for cross-app tracking.
+    <strong>We do not sell your personal information.</strong>
+    We do not use your data for advertising or cross-app tracking.
   </p>
 
   <hr />
 
-  <h2>Data Storage, Sync, and Retention</h2>
+  <h2>Data Storage and Retention</h2>
 
   <ul>
-    <li>Your budgets, expenses, categories, notes, and settings are retained so LVLD can function and your history remains available to you.</li>
-    <li>Where iCloud is enabled, your LVLD data may be stored and synced through your Apple iCloud account.</li>
-    <li>You can delete budget and expense information from within LVLD where supported.</li>
-    <li>LVLD does not create a separate LVLD account. If you want to remove your synced app data, you can delete your LVLD data from within the app where supported or manage app data through your Apple ID/iCloud settings.</li>
+    <li>Your budgets, transactions, categories, notes, and settings are retained on your device so LVLD can function and your history remains available to you.</li>
+    <li>You can delete budget and transaction information from within LVLD where supported.</li>
+    <li>LVLD does not create a separate LVLD account.</li>
+    <li>If you want to remove LVLD data from your device, you can delete data from within the app where supported or remove the app from your device.</li>
+    <li>If your iPhone is backed up using iCloud or a computer backup, LVLD data may be included in that backup according to Apple’s backup settings.</li>
     <li>Usage and diagnostic data may be retained in aggregated or de-identified form to help us improve the app.</li>
   </ul>
 
   <hr />
 
-  <h2>Third-Party Services</h2>
+  <h2>Service Providers</h2>
 
-  <p>LVLD may use third-party services solely to operate and improve the app.</p>
+  <p>
+    We use a small number of services to operate the app. These services receive only the limited information needed
+    to perform their function.
+  </p>
+
+  <h3>RevenueCat</h3>
+  <ul>
+    <li>RevenueCat is used to process and manage subscription purchases.</li>
+    <li>RevenueCat receives purchase information from Apple.</li>
+    <li>RevenueCat does not receive your budgets, transactions, financial entries, or payment card details.</li>
+  </ul>
+
+  <h3>Sentry</h3>
+  <ul>
+    <li>Sentry is used to receive crash reports and technical diagnostics.</li>
+    <li>Crash reports help us identify and fix app issues.</li>
+    <li>Sentry does not receive your budgets, transactions, financial entries, or identity.</li>
+  </ul>
+
+  <h3>Supabase</h3>
+  <ul>
+    <li>Our own Supabase database is used to record anonymous app-setup progress.</li>
+    <li>This may include which onboarding step was reached.</li>
+    <li>It does not include your onboarding answers, amounts, budgets, transactions, or identity.</li>
+  </ul>
+
+  <p>
+    None of these services are used for advertising or cross-app tracking, and none receive your budgets or transactions.
+  </p>
 
   <h3>Apple Services</h3>
   <ul>
-    <li><strong>iCloud</strong> for storing and syncing app data across your Apple devices where enabled.</li>
-    <li><strong>StoreKit</strong> for In-App Purchases and subscriptions where paid features are offered.</li>
-    <li>Apple’s crash reporting and performance diagnostics tools.</li>
+    <li><strong>StoreKit</strong> is used for In-App Purchases and subscriptions where paid features are offered.</li>
+    <li><strong>iCloud or computer backups</strong> may include LVLD data if you back up your iPhone, depending on your Apple backup settings.</li>
   </ul>
 
-  <p>No third-party services are used for advertising or cross-app tracking.</p>
+  <hr />
+
+  <h2>Purchases</h2>
+
+  <p>
+    Subscriptions are processed by Apple. We never see your payment details.
+  </p>
 
   <hr />
 
@@ -147,7 +185,7 @@
 
   <p>
     We take reasonable steps to protect your information from misuse, loss, and unauthorised access.
-    LVLD relies on Apple iCloud for data storage and sync where enabled, and Apple provides security protections for iCloud services.
+    LVLD stores your budgets, transactions, and settings on your device.
   </p>
 
   <p>
@@ -161,8 +199,8 @@
 
   <p>You can:</p>
   <ul>
-    <li>View, edit, or delete budget and expense information within LVLD where supported</li>
-    <li>Manage iCloud access through your Apple ID and iCloud settings</li>
+    <li>View, edit, or delete budget and transaction information within LVLD where supported</li>
+    <li>Manage iPhone backup settings through your Apple ID, iCloud, or computer backup settings</li>
     <li>Manage app permissions through iOS Settings</li>
     <li>Request access to, correction of, or deletion of personal information we hold about you</li>
     <li>Manage or cancel subscriptions through your Apple ID settings</li>
